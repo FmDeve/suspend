@@ -1,1 +1,1 @@
-worker: python sdf.py
+worker: python subway-discord-bot.py
