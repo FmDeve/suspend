@@ -82,7 +82,8 @@ async def on_message(message):
             await client.send.message(message.get_channel("124323"), member "Has been warned for:", "s%" % (" ").join(args[2:])))
         else:
             await client.send_message(message.channel, "You are not an Admin")
-client.run("NDk4NTA3NDg1MzM5MDU4MTk2.Dpuwdw.j7Wgqwk9P7N9AjI7tFynUZ49psc")
+            
+client.run(os.getenv('TOKEN'))
 
 
  
