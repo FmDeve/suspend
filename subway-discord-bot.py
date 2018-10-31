@@ -9,7 +9,7 @@ Client = discord.Client()
 client = commands.Bot(command_prefix = "!") 
 #Subways Bot
 
-chat_filter = ["Fuck", "Shit", "Ass", "fuck", "nigg", "fuk", "cunt", "cnut", "bitch", "dick", "d1ck", "pussy," "asshole", "b1tch", "b!tch", "blowjob", "cock", "c0ck"]
+chat_filter = ["APPLE"]
 bypass_list = []
 
 
@@ -78,8 +78,8 @@ async def on_message(message):
         if "498510048541278220" in [role.id for role in message.author.roles]:
             args = message.content.split(" ")
             member = discord.utils.get(message.server.members, mention=args[1])
-            await client.send.message(member, "You have been warned in Subway for:" "%s" % (" ").join(args[2:]))
-            await client.send.message(message.get_channel("124323"), member "Has been warned for:", "s%" % (" ").join(args[2:])))
+            await client.send.message(member, "You have been warned in Subway for:" "%s" % (" ").join(args[3:]))
+            await client.send.message(message.get_channel("124323"), member "Has been warned for:", "s%" % (" ").join(args[3:])))
         else:
             await client.send_message(message.channel, "You are not an Admin")
             
